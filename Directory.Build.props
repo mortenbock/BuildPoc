@@ -1,0 +1,12 @@
+<Project>
+  <PropertyGroup>
+    <Configurations>Debug;Release;MyConfig</Configurations>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'MyConfig|AnyCPU'">
+    <DebugType>none</DebugType>
+    <Optimize>true</Optimize>
+    <DefineConstants>TRACE</DefineConstants>
+  </PropertyGroup>
+
+</Project>
